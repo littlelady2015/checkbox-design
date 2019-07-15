@@ -1,0 +1,44 @@
+.checkbox {
+  .checkbox-label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    input[type="checkbox"] {
+      width: 16px;
+      height: 10px;
+      z-index: 1;
+      opacity: 0;
+    }
+    .input-inner-checked {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
+      border-collapse: separate;
+      background: url('/lib/styles/common/iconfont/tick.svg') #1890ff no-repeat center;
+      border:1px solid #1890ff;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+    }
+    .input-inner-unchecked {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
+      border-collapse: separate;
+      background-color: #ffffff;
+      border:1px solid #1890ff;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+    }
+    input[type="radio"]:checked + .advice{
+      background-image: url('/lib/styles/common/iconfont/svg.svg');
+    }
+  }
+}
